@@ -1,5 +1,5 @@
-
-# Project Overview
+# Project 01 Overview
+## Due date: June 16th, at 6:00 PM EST via pull request
 
 ## Project Schedule
 
@@ -20,10 +20,9 @@ Use this section to describe your final project and perhaps any links to relevan
 ## Google Sheet
 Include link to your google sheet here.  Here is the sample [Suresh had used in class]() 
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
 
 ## Functional Components
 
@@ -61,7 +60,7 @@ Use this section to include a brief code snippet of functionality that you are p
 
 ```python
 def foo(bar):
-	pass
+    pass
 ```
 
 ## Issues and Resolutions
@@ -79,7 +78,7 @@ def foo(bar):
 - Step 1. Create a folder for the your project
 - Step 2. Push to your fork
 - Step 3. Submit a pull request
-- Step 3.1. Add a title (First name, Last Name) and comment
+- Step 3.1. Add a title First name, Last Name only and comment
 
 In the comment section, you must add the following:
 ```text
