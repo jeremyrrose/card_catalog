@@ -44,12 +44,12 @@ Time frames are also key in the development cycle. You have limited time to code
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Materialize | H | 4hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
+| Feature | L | 3hr | -hr | -hr|
+| Feature | L | 1hr | -hr | -hr|
+| Feature | M | 4hr | -hr | -hr|
+| Feature | H | 4hr | -hr | -hr|
+| Feature | H | 4hr | -hr | -hr|
+| Feature | L | 4hr | -hr | -hr|
 | Total | H | 20hrs| -hrs | -hrs |
 
 ## Additional Libraries
