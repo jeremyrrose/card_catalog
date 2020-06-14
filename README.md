@@ -15,7 +15,7 @@ This schedule will be used to keep track of your progress throughout the week an
 |Day 6| Deploy to GitHub | Incomplete
 
 ## Project Description
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Use this section to describe your first project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
 ## Google Sheet
 Include link to your google sheet here. Here is the URL [Suresh had used in class](https://docs.google.com/spreadsheets/d/1orcguDZd5ux2TfV5lf-E2z0xPQDT6FV69W4DIYdP2J0/edit?usp=sharing) 
