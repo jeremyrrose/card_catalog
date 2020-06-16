@@ -7,84 +7,83 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
-|Day 6| Deploy to GitHub | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Priority Matrix / Timeline | Complete
+|Day 3| Core Application | Complete
+|Day 4| MVP & Bug Fixes | Complete
+|Day 5| Final Touches | Semi-complete
+|Day 6| Deploy to GitHub | Complete
 
 ## Project Description
-Use this section to describe your first project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This is a card catalog of the sort that might have been seen on the only computer in a public library in 1991. Catalog items can be found via search and lent to borrowers, and each item type includes methods for "using" the item.
+
+The user interface is based in a BASH terminal. To execute, type `python index.py` from within the project directory.
 
 ## Google Sheet
 Include link to your google sheet here. Here is the URL [Suresh had used in class](https://docs.google.com/spreadsheets/d/1orcguDZd5ux2TfV5lf-E2z0xPQDT6FV69W4DIYdP2J0/edit?usp=sharing) 
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
-## Functional Components
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the application was broken down into the following categories.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the application. Your estimates can then be used to evaluate application possibilities based on time needed and the actual time you have before application must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
-
 #### MVP
+
+Deliverables:
+
+1) List a catalog of items
+2) View and "use" individual items by catalog number
+3) Search items by title or by author/artist
+4) "Check out" items to borrowers and check them back in.
+5) List borrowers along with items currently borrowed.
+
+Approach:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Feature | H | 1hr | 1.5hr | -hr|
-| Feature  | H | 3hr | -hr | -hr|
-| Feature | H | H | -hr | -hr|
-| Feature  | H | 1.5hr| -hr | -hr |
-| Feature| M | 4hr | 2hr | -hr|
-| Feature | H | 3hrs| 2hr | -hr |
-| Total | H | 3hrs| 2hr | -hr |
+| Class logic | H | 1.5hr | 1.5hr | -hr|
+| Seed data  | H | .5hr | .5hr | -hr|
+| Program logic | H | 1.5hr | 2hr | -hr|
+| UI tweaks and BASH stylez  | M | .5hr| 1.5hr | -hr |
+| Error handling | H | .5hr | 1hr | -hr|
+| Total | H | 4.5hrs| 6.5hr | -hr |
 
 #### PostMVP
+
+Deliverables:
+
+1) Create new items
+2) Create new borrowers
+3) Show borrower history
+4) Integrate with SQL database
+
+Approach:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Feature | L | 3hr | -hr | -hr|
-| Feature | L | 1hr | -hr | -hr|
-| Feature | M | 4hr | -hr | -hr|
-| Feature | H | 4hr | -hr | -hr|
-| Feature | H | 4hr | -hr | -hr|
-| Feature | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Logic for item create | H | .75hr | .5hr | -hr|
+| Logic for borrower create | M | .75hr | .5hr | -hr|
+| Borrower history logic & display | L | 1hr | -hr | -hr|
+| Refactor for SQL | H | 3hr | -hr | -hr|
+| Total | H | 5.5hrs| 1hrs | -hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries. 
+
+- datetime
+- math
+- random
+- os
 
 ## Code Snippet
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+
+I had not previously used `filter()` or lambda functions in Python, so I'm pleased that I was able to find a simple solution for searching by title.  
 
 ```python
-def foo(bar):
-    pass
+def search_by_title():
+    input_title = input("Enter a word in the title and press Enter: ")
+    result = list(filter(lambda item: input_title.lower() in item.title.lower(), catalog))
+    print_list(result)
+    view_item()
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**:  Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**:  Project breaks on any input out of prescribed range
+**RESOLUTION**: Added new logic to catch and handle user errors
 
-## How to submit project 01
-### Setup
-- Step 1. Fork the repository
-- Step 2. Clone your fork
-### Submitting work
-- Step 1. Create a folder for the your project
-- Step 2. Push to your fork
-- Step 3. Submit a pull request
-- Step 3.1. Add a title First name, Last Name only and comment
+## To execute program in shell
 
-In the comment section, you must add the following:
-```text
-* Comfortability [0 to 5]
-* Completeness [0 to 5]
-* What was a win?
-* What was a challenge?
-* Any other comments
-```
+`python index.py`
