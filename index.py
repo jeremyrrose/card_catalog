@@ -98,16 +98,18 @@ def check_out(item):
             borrowers.append(borrower)
             if item.lend(borrower):
                 borrower.borrow(item)
+                print(f'{item.title} has been lent to {borrower.name}.')
             else:
-                print('This item is already checked out.')
+                print('This item is already checked out. Returning to main menu.')
         else:
             pass
     else:
         borrower = borrower_filter[0]
         if item.lend(borrower):
             borrower.borrow(item)
+            print(f'{item.title} has been lent to {borrower.name}.')
         else:
-            print('This item is already checked out.')
+            print('This item is already checked out. Returning to main menu.')
 
 def check_in(item):
     if item.borrower:
@@ -200,4 +202,5 @@ borrowers[2].borrow(catalog[12])
 catalog[6].lend(borrowers[0])
 borrowers[0].borrow(catalog[6])
 
+clear()
 run_catalog()
