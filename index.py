@@ -1,7 +1,6 @@
 import os
 from models import *
-import catalog_seed
-import borrower_seed
+from seeds import catalog_seed, borrower_seed
 
 run = False
 message = '\nCatalog Menu:\n1) Add an item.\n2) List catalog.\n3) Search by title.\n4) Search by author/artist.\n5) View item by catalog number.\n6) View borrowers\n0) Quit.\n\033[5m? \033[0m'
@@ -21,6 +20,10 @@ def is_int(val):
 def add_item():
     print('You need administrator privileges to add items. Returning to main menu.')
 
+    """
+    This function is disabled for MVP, as it needs new logic to handle other item classes.
+    """
+    
     # title = input("Title: ")
     # item_type = input("Type of item \n1) Fiction \n2) Compact Disc \n")
     # if int(item_type) == 1:
