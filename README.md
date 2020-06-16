@@ -33,14 +33,15 @@ Deliverables:
 5) List borrowers along with items currently borrowed.
 
 Approach:
+
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Class logic | H | 1.5hr | 1.5hr | -hr|
-| Seed data  | H | .5hr | .5hr | -hr|
-| Program logic | H | 1.5hr | 2hr | -hr|
-| UI tweaks and BASH stylez  | M | .5hr| 1.5hr | -hr |
-| Error handling | H | .5hr | 1hr | -hr|
-| Total | H | 4.5hrs| 6.5hr | -hr |
+| Class logic | H | 1.5hr | 1.5hr | 1.5hr|
+| Seed data  | H | .5hr | .5hr | .5hr|
+| Program logic | H | 1.5hr | 2hr | 2hr|
+| UI tweaks and BASH stylez  | M | .5hr| 1.5hr | 1.5hr |
+| Error handling | H | .5hr | 1hr | 1hr|
+| Total | H | 4.5hrs| 6.5hr | 6.5hr |
 
 #### PostMVP
 
@@ -52,13 +53,14 @@ Deliverables:
 4) Integrate with SQL database
 
 Approach:
+
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Logic for item create | H | .75hr | .5hr | -hr|
-| Logic for borrower create | M | .75hr | .5hr | -hr|
+| Logic for borrower create | M | .75hr | .5hr | .5hr|
 | Borrower history logic & display | L | 1hr | -hr | -hr|
 | Refactor for SQL | H | 3hr | -hr | -hr|
-| Total | H | 5.5hrs| 1hrs | -hrs |
+| Total | H | 5.5hrs| 1hrs | .5hr |
 
 ## Additional Libraries
 
@@ -82,6 +84,7 @@ def search_by_title():
 ## Issues and Resolutions
 
 **ERROR**:  Project breaks on any input out of prescribed range
+
 **RESOLUTION**: Added new logic to catch and handle user errors
 
 ## To execute program in shell
