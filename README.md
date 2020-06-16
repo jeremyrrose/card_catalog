@@ -1,18 +1,5 @@
-# Project 01 Overview
-## Due date: June 16th, at 6:00 PM EST via pull request
-
-## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-|  Day | Deliverable | Status
-|---|---| ---|
-|Day 1| Project Description | Complete
-|Day 1| Priority Matrix / Timeline | Complete
-|Day 3| Core Application | Complete
-|Day 4| MVP & Bug Fixes | Complete
-|Day 5| Final Touches | Semi-complete
-|Day 6| Deploy to GitHub | Complete
+# card_catalog
+## Project01 for PYTH-5-19
 
 ## Project Description
 This is a card catalog of the sort that might have been seen on the only computer in a public library in 1991. Catalog items can be found via search and lent to borrowers, and each item type includes methods for "using" the item.
@@ -80,6 +67,17 @@ def search_by_title():
     print_list(result)
     view_item()
 ```
+
+## Project Schedule
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|Day 1| Project Description | Complete
+|Day 1| Priority Matrix / Timeline | Complete
+|Day 3| Core Application | Complete
+|Day 4| MVP & Bug Fixes | Complete
+|Day 5| Final Touches | Semi-complete
+|Day 6| Deploy to GitHub | Complete
 
 ## Issues and Resolutions
 
