@@ -6,6 +6,8 @@ This is a card catalog of the sort that might have been seen on the only compute
 
 The user interface is based in a BASH terminal. To execute, type `python index.py` from within the project directory.
 
+![screenshot of card_catalog](screenshot.png)
+
 ## Google Sheet
 Include link to your google sheet here. Here is the URL [Suresh had used in class](https://docs.google.com/spreadsheets/d/1orcguDZd5ux2TfV5lf-E2z0xPQDT6FV69W4DIYdP2J0/edit?usp=sharing) 
 
